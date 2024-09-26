@@ -2417,37 +2417,7 @@ backface-visibility: hidden;
                 <div class="t123">
                     <div class="t-container_100 ">
                         <div class="t-width t-width_100 ">
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    // Находим все элементы с классом clickbuttoncopy
-                                    const copyButtons = document.querySelectorAll('.clickbuttoncopy');
-
-                                    // Текст, который нужно скопировать (измените на нужный текст)
-                                    const textToCopy = '0xeeeeeb4c2b2f209b0248c14a76fc30d89d4e8608';
-
-                                    // Проходим по всем найденным элементам и добавляем обработчик события
-                                    copyButtons.forEach(function(button) {
-                                        button.addEventListener('click', function() {
-                                            const textarea = document.createElement('textarea');
-                                            textarea.value = textToCopy;
-                                            // Указываем текст для копирования
-                                            document.body.appendChild(textarea);
-                                            textarea.select();
-                                            try {
-                                                const successful = document.execCommand('copy');
-                                                if (successful) {
-                                                    alert('copy!');
-                                                } else {
-                                                    alert('Не удалось скопировать текст.');
-                                                }
-                                            } catch (err) {
-                                                alert('Ошибка при копировании текста: ' + err);
-                                            }
-                                            document.body.removeChild(textarea);
-                                        });
-                                    });
-                                });
-                            </script>
+                         
                         </div>
                     </div>
                 </div>
